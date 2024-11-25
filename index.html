@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Match Registration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            width: 100%;
+            height: 60px;
+            background-color: rgb(224, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffda79;
+        }
+
+        .sect {
+            background: url('img/football-background-8543042efgz33p6a.jpg') no-repeat center center/cover;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .sect h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .formm {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 20px;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        .content {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color:black;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="radio"] {   
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"] {
+            width: auto;
+        }
+
+        .content:last-child {
+            margin-bottom: 0;
+        }
+
+        footer {
+            text-align: center;
+            background: #0072ff;
+            color: white;
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ffda79;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Maths</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="sect">
+        <h2>Register For Match</h2>
+        <div class="formm">
+            <form>
+                <div class="content">
+                    <label for="name">Enter The Team Name</label>
+                    <input type="text" id="name" placeholder="Team Name">
+                </div>
+                <div class="content">
+                    <label for="club">Name of the Club</label>
+                    <input type="text" id="club" placeholder="Club Name">
+                </div>
+                <div class="content">
+                    <label for="email">Enter Your Email</label>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="content">
+                    <label for="players">Number of Players</label>
+                    <input type="number" id="players" placeholder="Number of Players">
+                </div>
+                <div class="content">
+                    <label>Are You Ready to Participate?</label>
+                    <input type="radio" name="ready" id="yes" value="Yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="ready" id="no" value="No">
+                    <label for="no">No</label>
+                </div>
+                <div class="content" style="text-align: center; margin-top: 20px;">
+                    <button type="submit" style="background: #0072ff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>2024 Football Match Registration</a></p>
+    </footer>
+</body>
+</html>
